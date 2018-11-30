@@ -12,7 +12,7 @@ import redis.clients.jedis.Jedis;
  * 1. 有序存储多个字符串
  * 2. 相同元素可以重复出现
  * 
- * @author zsh10649
+ * @author zzj
  *
  */
 public class Task2 implements Runnable {

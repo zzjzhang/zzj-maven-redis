@@ -6,7 +6,7 @@ import redis.clients.jedis.Jedis;
  * 
  * 分布式锁
  * 
- * @author zsh10649
+ * @author zzj
  *
  */
 public class Task13 implements Runnable {

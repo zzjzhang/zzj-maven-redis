@@ -5,7 +5,7 @@ import redis.clients.jedis.Jedis;
 /**
  * STRING
  * 
- * @author zsh10649
+ * @author zzj
  */
 public class Task1 implements Runnable {
 

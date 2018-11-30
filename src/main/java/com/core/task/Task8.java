@@ -5,7 +5,7 @@ import redis.clients.jedis.Jedis;
 /**
  * 键 的 过期时间
  * 
- * @author zsh10649
+ * @author zzj
  *
  */
 public class Task8 implements Runnable {

@@ -7,7 +7,7 @@ import redis.clients.jedis.Jedis;
  * 1. 异步执行任务
  * 2. 先进先出
  * 
- * @author zsh10649
+ * @author zzj
  */
 public class Task14 implements Runnable {
 

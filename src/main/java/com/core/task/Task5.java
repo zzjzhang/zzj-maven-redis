@@ -11,7 +11,7 @@ import redis.clients.jedis.Tuple;
  * 
  * 1. 存储键值对
  * 
- * @author zsh10649
+ * @author zzj
  *
  */
 public class Task5 implements Runnable {

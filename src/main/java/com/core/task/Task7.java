@@ -10,7 +10,7 @@ import redis.clients.jedis.Response;
  * 
  * Redis 事务
  * 
- * @author zsh10649
+ * @author zzj
  *
  */
 public class Task7 implements Runnable {

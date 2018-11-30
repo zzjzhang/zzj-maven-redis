@@ -5,7 +5,7 @@ import redis.clients.jedis.Jedis;
 /**
  * 持久化 —— 快照、AOF
  * 
- * @author zsh10649
+ * @author zzj
  *
  */
 public class Task9 implements Runnable {

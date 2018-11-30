@@ -11,7 +11,7 @@ import redis.clients.jedis.Pipeline;
  * 
  * 使用 列表 结构，因为 列表 是 有序的
  * 
- * @author zsh10649
+ * @author zzj
  *
  */
 public class Task12 implements Runnable {

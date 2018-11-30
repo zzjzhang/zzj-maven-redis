@@ -9,7 +9,7 @@ import redis.clients.jedis.Jedis;
  * 《实战》例子
  * - 聊天群 P141 （实体：聊天群、用户、消息）
  * 
- * @author zsh10649
+ * @author zzj
  */
 public class Task15 implements Runnable {
 

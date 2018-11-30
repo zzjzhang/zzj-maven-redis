@@ -7,7 +7,7 @@ import redis.clients.jedis.Jedis;
 /**
  * Redis 服务器 的 主从配置
  * 
- * @author zsh10649
+ * @author zzj
  *
  */
 public class Task10 implements Runnable {

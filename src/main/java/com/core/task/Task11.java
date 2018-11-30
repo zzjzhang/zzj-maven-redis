@@ -7,7 +7,7 @@ import redis.clients.jedis.Pipeline;
  *
  * 非事务性 流水线
  *
- * @author zsh10649
+ * @author zzj
  *
  */
 public class Task11 implements Runnable {

@@ -7,7 +7,7 @@ import redis.clients.jedis.Jedis;
  * 
  * 其他命令 —— 排序
  * 
- * @author zsh10649
+ * @author zzj
  *
  */
 public class Task6 implements Runnable {

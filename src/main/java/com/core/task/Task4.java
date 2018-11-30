@@ -9,7 +9,7 @@ import redis.clients.jedis.Jedis;
  * HASH
  * 1. 存储多个键值对之间的映射
  * 
- * @author zsh10649
+ * @author zzj
  *
  */
 public class Task4 implements Runnable {
