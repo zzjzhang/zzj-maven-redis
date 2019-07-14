@@ -11,6 +11,8 @@ import redis.clients.jedis.Pipeline;
  * 
  * 使用 列表 结构，因为 列表 是 有序的
  * 
+ * Pipeline 提升 吞吐量
+ * 
  * @author zzj
  *
  */
@@ -50,7 +52,7 @@ public class Task12 implements Runnable {
 		// 把 列表 长度 限定 为 100
 		pipeline.ltrim(listKey, 0, 99);
 
-		// 执行 事务
+		// 执行 管道
 		pipeline.exec();
 
 		// 2. 查询 提示 联系人
