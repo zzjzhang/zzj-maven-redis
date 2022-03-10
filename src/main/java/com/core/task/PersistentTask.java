@@ -8,7 +8,7 @@ import redis.clients.jedis.Jedis;
  * @author zzj
  *
  */
-public class Task9 implements Runnable {
+public class PersistentTask implements Runnable {
 
 	// 字段
 	private String host;
@@ -17,7 +17,7 @@ public class Task9 implements Runnable {
 
 
 	// 构造方法
-	public Task9(String hostName, int portNo) {
+	public PersistentTask(String hostName, int portNo) {
 		this.host = hostName;
 		this.port = portNo;
 		this.jedis = new Jedis(host, port);

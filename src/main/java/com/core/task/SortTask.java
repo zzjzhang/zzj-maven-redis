@@ -10,7 +10,7 @@ import redis.clients.jedis.Jedis;
  * @author zzj
  *
  */
-public class Task6 implements Runnable {
+public class SortTask implements Runnable {
 
 	// 字段
 	private String host;
@@ -19,7 +19,7 @@ public class Task6 implements Runnable {
 	private String listKey;
 
 	// 构造方法
-	public Task6(String hostName, int portNo) {
+	public SortTask(String hostName, int portNo) {
 		this.host = hostName;
 		this.port = portNo;
 		this.jedis = new Jedis(host, port);

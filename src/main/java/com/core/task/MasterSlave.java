@@ -10,7 +10,7 @@ import redis.clients.jedis.Jedis;
  * @author zzj
  *
  */
-public class Task10 implements Runnable {
+public class MasterSlave implements Runnable {
 
 	// 字段
 	private String masterHost;
@@ -21,7 +21,7 @@ public class Task10 implements Runnable {
 
 
 	// 构造方法
-	public Task10(String masterHostName, int masterPortNo, String slaveHostName, int slavePortNo) {
+	public MasterSlave(String masterHostName, int masterPortNo, String slaveHostName, int slavePortNo) {
 		this.masterHost = masterHostName;
 		this.masterPort = masterPortNo;
 		this.slaveHost = slaveHostName;

@@ -10,7 +10,7 @@ import redis.clients.jedis.Pipeline;
  * @author zzj
  *
  */
-public class Task11 implements Runnable {
+public class PipelineTask implements Runnable {
 	// 字段
 	private String host;
 	private int port;
@@ -20,7 +20,7 @@ public class Task11 implements Runnable {
 
 
 	// 构造方法
-	public Task11(String hostName, int portNo) {
+	public PipelineTask(String hostName, int portNo) {
 		this.host = hostName;
 		this.port = portNo;
 		this.jedis = new Jedis(host, port);
@@ -31,7 +31,7 @@ public class Task11 implements Runnable {
 
 	// 业务方法
 	public void run() {
-		Pipeline pipeline = this.jedis.pipelined();
+		redis.clients.jedis.Pipeline pipeline = this.jedis.pipelined();
 
 		// 设置 HASH 值
 		pipeline.hset(hashKey, hashField, "hashValue1");

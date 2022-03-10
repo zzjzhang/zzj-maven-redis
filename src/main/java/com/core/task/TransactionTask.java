@@ -13,7 +13,7 @@ import redis.clients.jedis.Response;
  * @author zzj
  *
  */
-public class Task7 implements Runnable {
+public class TransactionTask implements Runnable {
 
 	// 字段
 	private String host;
@@ -22,7 +22,7 @@ public class Task7 implements Runnable {
 	private String strKey;
 
 	// 构造方法
-	public Task7(String hostName, int portNo) {
+	public TransactionTask(String hostName, int portNo) {
 		this.host = hostName;
 		this.port = portNo;
 		this.jedis = new Jedis(host, port);

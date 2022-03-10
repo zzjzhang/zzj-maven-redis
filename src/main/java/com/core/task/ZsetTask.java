@@ -14,7 +14,7 @@ import redis.clients.jedis.Tuple;
  * @author zzj
  *
  */
-public class Task5 implements Runnable {
+public class ZsetTask implements Runnable {
 
 	// 1. 字段
 	private String host;
@@ -24,7 +24,7 @@ public class Task5 implements Runnable {
 
 
 	// 2. 构造方法
-	public Task5(String hostName, int portNo) {
+	public ZsetTask(String hostName, int portNo) {
 		this.host = hostName;
 		this.port = portNo;
 		this.jedis = new Jedis(host, port);

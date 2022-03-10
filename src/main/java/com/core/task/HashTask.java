@@ -12,7 +12,7 @@ import redis.clients.jedis.Jedis;
  * @author zzj
  *
  */
-public class Task4 implements Runnable {
+public class HashTask implements Runnable {
 
 	// 1. 字段
 	private String host;
@@ -22,7 +22,7 @@ public class Task4 implements Runnable {
 
 
 	// 2. 构造方法
-	public Task4(String hostName, int portNo) {
+	public HashTask(String hostName, int portNo) {
 		this.host = hostName;
 		this.port = portNo;
 		this.jedis = new Jedis(host, port);
