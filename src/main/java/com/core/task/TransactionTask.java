@@ -1,10 +1,10 @@
 package com.core.task;
 
-import java.util.List;
-import java.io.IOException;
 import redis.clients.jedis.Jedis;
 import redis.clients.jedis.Pipeline;
 import redis.clients.jedis.Response;
+
+import java.util.List;
 
 /**
  * 
@@ -14,7 +14,6 @@ import redis.clients.jedis.Response;
  *
  */
 public class TransactionTask implements Runnable {
-
 	// 字段
 	private String host;
 	private int port;
@@ -31,10 +30,8 @@ public class TransactionTask implements Runnable {
 
 	// 业务方法
 	public void run() {
-
 		// 开启 事务
 		Pipeline pipeline = jedis.pipelined();
-
 		pipeline.multi();
 
 		// 事务 操作一
@@ -49,18 +46,12 @@ public class TransactionTask implements Runnable {
 		Response<List<Object>> response = pipeline.exec();
 
 		// 关闭 事务
-		try {
-			pipeline.close();
-		} catch (IOException e) {
-			e.printStackTrace();
-		}
+		pipeline.close();
 
 		// 执行 事务 后
 		System.out.println("strKey 值：执行事务后：" + jedis.get(strKey));
 
 		// 删除
 		jedis.del(strKey);
-
 	}
-
 }
